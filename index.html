@@ -28,29 +28,24 @@
 <body class="bg-slate-100 poppins">
     <header class="mx-10 py-3">
         <div class="navbar bg-base-100 px-10 rounded-xl">
+            <!-- name -->
             <div class="flex-1">
                 <img src="assets/logo.png" alt="">
-                <a class="text-xl">Dev<span class="font-bold">Board</span></a>
+                <a class="text-3xl">Dev<span class="font-bold">Board</span></a>
             </div>
-            <div class="flex-none">
-                <div>
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                        <div class="flex gap-2">
-                            <i class="fa-solid fa-square-check"></i>
-                            <span id="task-done">8</span>
-                        </div>
-                    </div>
-
+            <div class="flex gap-10">
+                <!-- task updated number -->
+                <div class="flex gap-4">
+                    <i class="fa-solid fa-square-check self-center text-2xl"></i>
+                    <span id="task-done" class="text-3xl font-bold self-center">8</span>
                 </div>
-                <div class="dropdown dropdown-end">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                        <div class="w-10 rounded-full">
-                            <img alt="Tailwind CSS Navbar component" src="assets/theme-btn.png" />
-                        </div>
-                    </div>
-
+                <!-- theme logo -->
+                <div class="w-10 rounded-full">
+                    <img alt="Tailwind CSS Navbar component" src="assets/theme-btn.png" />
                 </div>
+
             </div>
+        </div>
         </div>
     </header>
     <main class="mx-10 py-3 grid grid-cols-[3.4fr,1fr] gap-10">
@@ -59,28 +54,27 @@
             <!-- card header -->
             <section class="card grid grid-cols-[1fr,2fr,1fr] gap-5 p-10">
                 <!-- assigned div -->
-                <div class="card grid grid-cols-[1fr,5fr] gap-5 bg-slate-100 p-5 text-align-center">
-                    <div>
+                <div class="card grid grid-cols-[1fr,5fr] gap-5 bg-slate-100 p-5 text-align-center h-32">
+                    <div class="justify-self-center self-center">
                         <img src="assets/checkbox.png" alt="">
                     </div>
                     <div>
                         <p>Task Assigned</p>
-                        <p id="task-left" class="font-bold">05</p>
+                        <p id="task-left" class="font-bold text-2xl">05</p>
                     </div>
                 </div>
                 <!-- Blog div -->
-                <div id="blog-page" class="card grid grid-cols-[1fr,5fr] gap-5 bg-blue-300 p-5">
+                <div id="blog-page" class="card grid grid-cols-[1fr,5fr] gap-5 bg-blue-300 p-5 h-32">
                     <div>
                         <img src="assets/board.png" alt="">
                     </div>
-                    <p>Discovering Something New Today!</p>
+                    <p class="self-center">Discovering Something New Today!</p>
                 </div>
                 <!-- date div -->
-                <div class="card grid grid-cols-[1fr,5fr] gap-5 bg-slate-100 p-5">
+                <div class="card grid grid-cols-[1fr,5fr] gap-5 bg-slate-100 p-5 self-center h-32">
                     <img src="assets/calender.png" alt="">
                     <div>
-                        <p>Wed,</p>
-                        <p>Jul 28 2025</p>
+                        <p id="time-now">time</p>
                     </div>
                 </div>
             </section>
@@ -112,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-               
+
                 <!-- single card -->
                 <div class="task card bg-slate-100 p-2">
                     <div>
@@ -138,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-               
+
                 <!-- single card -->
                 <div class="task card bg-slate-100 p-2">
                     <div>
@@ -164,7 +158,7 @@
                         </div>
                     </div>
                 </div>
-               
+
                 <!-- single card -->
                 <div class="task card bg-slate-100 p-2">
                     <div>
@@ -190,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-               
+
                 <!-- single card -->
                 <div class="task card bg-slate-100 p-2">
                     <div>
@@ -216,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-               
+
                 <!-- single card -->
                 <div class="task card bg-slate-100 p-2">
                     <div>
@@ -242,16 +236,25 @@
                         </div>
                     </div>
                 </div>
-               
+
             </section>
         </section>
         <!-- Activity Log Section -->
         <section class="bg-white p-10 card mb-4">
-            <h3>Activity Log</h3>
+            <div class="mx-auto flex gap-2">
+                <img src="assets/activity.png" alt="">
+                <h3 class="text-xl">Activity Log</h3>
+            </div>
+            <button id="clear-history" class="btn btn-primary">Cleat History</button>
+            <!-- activity update section -->
+             <section id="activity-update">
+
+             </section>
         </section>
     </main>
     <script src="script/utilities/utility.js"></script>
     <script src="script/alret.js"></script>
+    <script src="script/time.js"></script>
 </body>
 
 </html>
