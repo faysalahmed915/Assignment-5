@@ -40,7 +40,7 @@
                     <span id="task-done" class="text-3xl font-bold self-center">8</span>
                 </div>
                 <!-- theme logo -->
-                <div class="w-10 rounded-full">
+                <div id="random-bg" class="w-10 rounded-full">
                     <img alt="Tailwind CSS Navbar component" src="assets/theme-btn.png" />
                 </div>
 
@@ -240,21 +240,27 @@
             </section>
         </section>
         <!-- Activity Log Section -->
-        <section class="bg-white p-10 card mb-4">
-            <div class="mx-auto flex gap-2">
+        <section class="bg-white p-10 card">
+            <div class="mx-auto flex gap-2 mb-5">
                 <img src="assets/activity.png" alt="">
                 <h3 class="text-xl">Activity Log</h3>
             </div>
-            <button id="clear-history" class="btn btn-primary">Cleat History</button>
+            <div class="mx-auto">
+                <button id="clear-history" class="btn btn-primary">Cleat History</button>
+            </div>
             <!-- activity update section -->
              <section id="activity-container">
 
              </section>
         </section>
     </main>
+
+    <!-- JavaScript Links -->
     <script src="script/utilities/utility.js"></script>
     <script src="script/alret.js"></script>
     <script src="script/time.js"></script>
+    <script src="script/random-bg.js"></script>
+    <script src="script/clearHistory.js"></script>
 </body>
 
 </html>
