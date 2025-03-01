@@ -24,3 +24,9 @@ for (let i = 0; i < document.getElementsByClassName("btn-alert").length; i++) {
     });
 }
 
+// redirecting to blog page
+document.getElementById("blog-page").addEventListener("click", function () {
+        
+    window.location.href = "blog.html";
+});
+

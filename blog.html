@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/8dd89b16c5.js" crossorigin="anonymous"></script>
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+
+    <title>DevBoard</title>
+</head>
+
+<body class="bg-slate-100 poppins">
+    <header class="mx-10 py-3">
+        <div class="navbar bg-base-100 px-10 rounded-xl">
+            <div class="flex-1">
+                <img src="assets/logo.png" alt="">
+                <a class="text-xl">Dev<span class="font-bold">Board</span></a>
+            </div>
+            <!-- back to main page button -->
+             <button id="back-to-desk" class="btn btn-primary">Back to Desk</button>
+            
+        </div>
+    </header>
+    <script src="script/utilities/utility.js"></script>
+    <script src="script/toggle.js"></script>
+</body>
+
+</html>
