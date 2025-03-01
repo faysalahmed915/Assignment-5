@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/8dd89b16c5.js" crossorigin="anonymous"></script>
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+
+    <title>DevBoard</title>
+</head>
+
+<body class="bg-slate-100 poppins">
+    <header class="mx-10 py-3">
+        <div class="navbar bg-base-100 px-10 rounded-xl">
+            <div class="flex-1">
+                <img src="assets/logo.png" alt="">
+                <a class="text-xl">Dev<span class="font-bold">Board</span></a>
+            </div>
+            <div class="flex-none">
+                <div>
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <div class="flex gap-2">
+                            <i class="fa-solid fa-square-check"></i>
+                            <span id="task-done">8</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img alt="Tailwind CSS Navbar component" src="assets/theme-btn.png" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mx-10 py-3 border-blue-700 grid grid-cols-[3.4fr,1fr] gap-10">
+        <section>
+            <!-- card header -->
+            <section class="card grid grid-cols-[1fr,2fr,1fr] gap-5 p-10">
+                <!-- assigned div -->
+                <div class="flex gap-5">
+                    <div>
+                        <img src="assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p>Task Assigned</p>
+                        <p id="task-left" class="font-bold">05</p>
+                    </div>
+                </div>
+                <!-- hero div -->
+                <div class="flex gap-5">
+                    <img src="assets/board.png" alt="">
+                    <p>Discovering Something New Today!</p>
+                </div>
+                <!-- date div -->
+                <div class="flex gap-5">
+                    <img src="assets/calender.png" alt="">
+                    <div>
+                        <p>Wed,</p>
+                        <p>Jul 28 2025</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- car-box section -->
+            <section class="card p-10 grid grid-cols-3 gap-5">
+                <!-- single card -->
+                <div class="task card bg-slate-100 p-2">
+                    <div>
+                        <button class="btn bg-white">
+                            ShopEase
+                        </button>
+                    </div>
+                    <h3 class="text-2xl font-semibold py-2">
+                        Fix Mobole Button Issue
+                    </h3>
+                    <div class="bg-white p-5 rounded-xl">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tenetur!</p>
+                    </div>
+                    <div class="flex justify-between py-5">
+                        <div>
+                            <p>Deadline</p>
+                            <p>12/12/2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary btn-alert">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- single card -->
+                <div class="task card bg-slate-100 p-2">
+                    <div>
+                        <button class="btn bg-white">
+                            ShopEase
+                        </button>
+                    </div>
+                    <h3 class="text-2xl font-semibold py-2">
+                        Fix Mobole Button Issue
+                    </h3>
+                    <div class="bg-white p-5 rounded-xl">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tenetur!</p>
+                    </div>
+                    <div class="flex justify-between py-5">
+                        <div>
+                            <p>Deadline</p>
+                            <p>12/12/2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary btn-alert">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- single card -->
+                <div class="task card bg-slate-100 p-2">
+                    <div>
+                        <button class="btn bg-white">
+                            ShopEase
+                        </button>
+                    </div>
+                    <h3 class="text-2xl font-semibold py-2">
+                        Fix Mobole Button Issue
+                    </h3>
+                    <div class="bg-white p-5 rounded-xl">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tenetur!</p>
+                    </div>
+                    <div class="flex justify-between py-5">
+                        <div>
+                            <p>Deadline</p>
+                            <p>12/12/2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary btn-alert">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- single card -->
+                <div class="task card bg-slate-100 p-2">
+                    <div>
+                        <button class="btn bg-white">
+                            ShopEase
+                        </button>
+                    </div>
+                    <h3 class="text-2xl font-semibold py-2">
+                        Fix Mobole Button Issue
+                    </h3>
+                    <div class="bg-white p-5 rounded-xl">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tenetur!</p>
+                    </div>
+                    <div class="flex justify-between py-5">
+                        <div>
+                            <p>Deadline</p>
+                            <p>12/12/2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary btn-alert">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- single card -->
+                <div class="task card bg-slate-100 p-2">
+                    <div>
+                        <button class="btn bg-white">
+                            ShopEase
+                        </button>
+                    </div>
+                    <h3 class="text-2xl font-semibold py-2">
+                        Fix Mobole Button Issue
+                    </h3>
+                    <div class="bg-white p-5 rounded-xl">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tenetur!</p>
+                    </div>
+                    <div class="flex justify-between py-5">
+                        <div>
+                            <p>Deadline</p>
+                            <p>12/12/2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary btn-alert">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- single card -->
+                <div class="task card bg-slate-100 p-2">
+                    <div>
+                        <button class="btn bg-white">
+                            ShopEase
+                        </button>
+                    </div>
+                    <h3 class="text-2xl font-semibold py-2">
+                        Fix Mobole Button Issue
+                    </h3>
+                    <div class="bg-white p-5 rounded-xl">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tenetur!</p>
+                    </div>
+                    <div class="flex justify-between py-5">
+                        <div>
+                            <p>Deadline</p>
+                            <p>12/12/2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary btn-alert">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+            </section>
+        </section>
+        <!-- Activity Log Section -->
+        <section class="bg-white p-10 card">
+            <h3>Activity Log</h3>
+        </section>
+    </main>
+    <script src="script/utilities/utility.js"></script>
+    <script src="script/alret.js"></script>
+</body>
+
+</html>
