@@ -5,6 +5,10 @@ let taskDone = 0;
 let taskLeft = document.getElementsByClassName("task").length;
 document.getElementById("task-left").innerText = taskLeft;
 
+// task title
+
+console.log(taskTitle)
+
 // button alert
 for (let i = 0; i < document.getElementsByClassName("btn-alert").length; i++) {
     document.getElementsByClassName("btn-alert")[i].addEventListener("click", function () {
@@ -17,6 +21,8 @@ for (let i = 0; i < document.getElementsByClassName("btn-alert").length; i++) {
         console.log(taskLeft);
         document.getElementById("task-left").innerText = taskLeft;
         this.disabled = true;
+        // task history
+        activity (i)
         // all tasks completed
         if (taskLeft === 0) {
             alert("You have completed all the tasks");
@@ -26,7 +32,7 @@ for (let i = 0; i < document.getElementsByClassName("btn-alert").length; i++) {
 
 // redirecting to blog page
 document.getElementById("blog-page").addEventListener("click", function () {
-        
+
     window.location.href = "blog.html";
 });
 
