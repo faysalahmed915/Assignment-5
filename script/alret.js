@@ -22,7 +22,7 @@ for (let i = 0; i < document.getElementsByClassName("btn-alert").length; i++) {
         document.getElementById("task-left").innerText = taskLeft;
         this.disabled = true;
         // task history
-        activity (i)
+        activity(i)
         // all tasks completed
         if (taskLeft === 0) {
             alert("You have completed all the tasks");
