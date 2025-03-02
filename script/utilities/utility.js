@@ -13,6 +13,7 @@ const divHistory = document.getElementById("activity-container");
 function activity (indexOfCard) {
     
         const divUpdate = document.createElement("div");
+       
         divUpdate.innerHTML = `
             <div class="card bg-blue-100 px-8 py-5 my-3">
                 <p>
@@ -22,5 +23,8 @@ function activity (indexOfCard) {
                 </p>
             </div>
         `
+       
+       
         divHistory.appendChild(divUpdate)
+        return
 }

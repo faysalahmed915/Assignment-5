@@ -30,14 +30,17 @@
         <div class="navbar bg-base-100 px-10 rounded-xl">
             <!-- name -->
             <div class="flex-1">
-                <img src="assets/logo.png" alt="">
-                <a class="text-3xl">Dev<span class="font-bold">Board</span></a>
+                <div class="flex gap-3 items-center">
+                    <img src="assets/logo.png" alt="">
+                    <a class="text-4xl">Dev<span class="font-bold">Board</span></a>
+                </div>
             </div>
+
             <div class="flex gap-10">
                 <!-- task updated number -->
                 <div class="flex gap-4">
-                    <i class="fa-solid fa-square-check self-center text-2xl"></i>
-                    <span id="task-done" class="text-3xl font-bold self-center">8</span>
+                    <i class="fa-solid fa-square-check self-center text-3xl text-blue-600"></i>
+                    <span id="task-done" class="text-4xl font-bold self-center">27</span>
                 </div>
                 <!-- theme logo -->
                 <div id="random-bg" class="w-10 rounded-full">
@@ -54,7 +57,7 @@
             <!-- card header -->
             <section class="card grid grid-cols-[1fr,2fr,1fr] gap-5 p-10">
                 <!-- assigned div -->
-                <div class="card grid grid-cols-[1fr,5fr] gap-5 bg-slate-100 p-5 text-align-center h-32">
+                <div class="card grid grid-cols-[1fr,5fr] gap-5 bg-slate-100 p-5 text-align-center h-32 items-center">
                     <div class="justify-self-center self-center">
                         <img src="assets/checkbox.png" alt="">
                     </div>
@@ -64,14 +67,12 @@
                     </div>
                 </div>
                 <!-- Blog div -->
-                <div id="blog-page" class="card grid grid-cols-[1fr,5fr] gap-5 bg-blue-300 p-5 h-32">
-                    <div>
-                        <img src="assets/board.png" alt="">
-                    </div>
-                    <p class="self-center">Discovering Something New Today!</p>
+                <div id="blog-page" class="card grid grid-cols-[1fr,5fr] gap-5 bg-blue-300 p-5 h-32 items-center">
+                    <img src="assets/board.png" alt="">
+                    <p class="text-2xl">Discovering Something New Today!</p>
                 </div>
                 <!-- date div -->
-                <div class="card grid grid-cols-[1fr,5fr] gap-5 bg-slate-100 p-5 self-center h-32">
+                <div class="card grid grid-cols-[1fr,5fr] gap-5 bg-slate-100 p-5 items-center h-32">
                     <img src="assets/calender.png" alt="">
                     <div>
                         <p id="time-now">time</p>
@@ -85,19 +86,20 @@
                 <div class="task card bg-slate-100 p-2">
                     <div>
                         <button class="btn bg-white">
-                            ShopEase
+                            Meta
                         </button>
                     </div>
-                    <h3 class="task-title text-2xl font-semibold py-2">
+                    <h3 class="task-title text-2xl font-semibold py-2 h-20">
                         Fix Mobole Button Issue
                     </h3>
-                    <div class="bg-white p-5 rounded-xl">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tenetur!</p>
-                    </div>
+                    <p class="bg-white p-5 rounded-xl h-48 text-wrap truncate">Debug using Chrome DevTools, check for
+                        overlapping elements, and ensure onClick works
+                        properly
+                    </p>
                     <div class="flex justify-between py-5">
                         <div>
                             <p>Deadline</p>
-                            <p>12/12/2025</p>
+                            <p class="font-semibold">01/03/2025</p>
                         </div>
                         <div>
                             <button class="btn btn-primary btn-alert">
@@ -106,24 +108,23 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- single card -->
                 <div class="task card bg-slate-100 p-2">
                     <div>
                         <button class="btn bg-white">
-                            ShopEase
+                            CloudSync
                         </button>
                     </div>
-                    <h3 class="task-title text-2xl font-semibold py-2">
-                        Fix Mobole Button Issue
+                    <h3 class="task-title text-2xl font-semibold py-2 h-20">
+                        Add Dark Mode
                     </h3>
-                    <div class="bg-white p-5 rounded-xl">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tenetur!</p>
-                    </div>
+                    <p class="bg-white p-5 rounded-xl h-48 text-wrap truncate">Store the user's preference in
+                        localStorage, update CSS variables dynamically, and apply a
+                        smooth transition effect.</p>
                     <div class="flex justify-between py-5">
                         <div>
                             <p>Deadline</p>
-                            <p>12/12/2025</p>
+                            <p class="font-semibold">01/03/2025</p>
                         </div>
                         <div>
                             <button class="btn btn-primary btn-alert">
@@ -132,24 +133,24 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- single card -->
                 <div class="task card bg-slate-100 p-2">
                     <div>
                         <button class="btn bg-white">
-                            ShopEase
+                            SwiftPay
                         </button>
                     </div>
-                    <h3 class="task-title text-2xl font-semibold py-2">
-                        Fix Mobole Button Issue
+                    <h3 class="task-title text-2xl font-semibold py-2 h-20">
+                        Optimize Home page
                     </h3>
-                    <div class="bg-white p-5 rounded-xl">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tenetur!</p>
-                    </div>
+                    <p class="bg-white p-5 rounded-xl h-48 text-wrap truncate">Debug using Chrome DevTools, check for
+                        overlapping elements, and ensure onClick works
+                        properly
+                    </p>
                     <div class="flex justify-between py-5">
                         <div>
                             <p>Deadline</p>
-                            <p>12/12/2025</p>
+                            <p class="font-semibold">01/03/2025</p>
                         </div>
                         <div>
                             <button class="btn btn-primary btn-alert">
@@ -158,24 +159,22 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- single card -->
                 <div class="task card bg-slate-100 p-2">
                     <div>
                         <button class="btn bg-white">
-                            ShopEase
+                            Meta
                         </button>
                     </div>
-                    <h3 class="task-title text-2xl font-semibold py-2">
-                        Fix Mobole Button Issue
+                    <h3 class="task-title text-2xl font-semibold py-2 h-20">
+                        Add new emoji 🤲
                     </h3>
-                    <div class="bg-white p-5 rounded-xl">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tenetur!</p>
-                    </div>
+                    <p class="bg-white p-5 rounded-xl h-48 text-wrap truncate">Debug using Chrome DevTools, check for
+                        overlapping elements, and ensure onClick works properly</p>
                     <div class="flex justify-between py-5">
                         <div>
                             <p>Deadline</p>
-                            <p>12/12/2025</p>
+                            <p class="font-semibold">01/03/2025</p>
                         </div>
                         <div>
                             <button class="btn btn-primary btn-alert">
@@ -184,24 +183,21 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- single card -->
                 <div class="task card bg-slate-100 p-2">
                     <div>
                         <button class="btn bg-white">
-                            ShopEase
+                            Google LLC
                         </button>
                     </div>
-                    <h3 class="task-title text-2xl font-semibold py-2">
-                        Fix Mobole Button Issue
+                    <h3 class="task-title text-2xl font-semibold py-2 h-20">
+                        Integrate OpenAI API
                     </h3>
-                    <div class="bg-white p-5 rounded-xl">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tenetur!</p>
-                    </div>
+                    <p class="bg-white p-5 rounded-xl h-48 text-wrap truncate">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                     <div class="flex justify-between py-5">
                         <div>
                             <p>Deadline</p>
-                            <p>12/12/2025</p>
+                            <p class="font-semibold">01/03/2025</p>
                         </div>
                         <div>
                             <button class="btn btn-primary btn-alert">
@@ -210,24 +206,21 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- single card -->
                 <div class="task card bg-slate-100 p-2">
                     <div>
                         <button class="btn bg-white">
-                            ShopEase
+                            Glassdoar
                         </button>
                     </div>
-                    <h3 class="task-title text-2xl font-semibold py-2">
-                        Fix Mobole Button Issue
+                    <h3 class="task-title text-2xl font-semibold py-2 h-20">
+                        Improve Job searching
                     </h3>
-                    <div class="bg-white p-5 rounded-xl">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tenetur!</p>
-                    </div>
+                    <p class="bg-white p-5 rounded-xl h-48 text-wrap truncate">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                     <div class="flex justify-between py-5">
                         <div>
                             <p>Deadline</p>
-                            <p>12/12/2025</p>
+                            <p class="font-semibold">01/03/2025</p>
                         </div>
                         <div>
                             <button class="btn btn-primary btn-alert">
@@ -236,22 +229,50 @@
                         </div>
                     </div>
                 </div>
+                <!-- single card -->
+                <div class="task card bg-slate-100 p-2">
+                    <div>
+                        <button class="btn bg-white">
+                            Glassdoar
+                        </button>
+                    </div>
+                    <h3 class="task-title text-2xl font-semibold py-2 h-20">
+                        Improve Job searching
+                    </h3>
+                    <p class="bg-white p-5 rounded-xl h-48 text-wrap truncate">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                    <div class="flex justify-between py-5">
+                        <div>
+                            <p>Deadline</p>
+                            <p class="font-semibold">01/03/2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary btn-alert">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
 
+
+                <!-- End of main section -->
             </section>
         </section>
+
+
         <!-- Activity Log Section -->
         <section class="bg-white p-10 card">
-            <div class="mx-auto flex gap-2 mb-5">
+            <div class="mx-auto flex gap-2">
                 <img src="assets/activity.png" alt="">
                 <h3 class="text-xl">Activity Log</h3>
             </div>
-            <div class="mx-auto">
-                <button id="clear-history" class="btn btn-primary">Cleat History</button>
+            <div class="mx-auto my-4">
+                <button id="clear-history" class="btn btn-primary">Clear History</button>
             </div>
             <!-- activity update section -->
-             <section id="activity-container">
+            <section id="activity-container">
 
-             </section>
+            </section>
         </section>
     </main>
 
